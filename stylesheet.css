@@ -3,39 +3,102 @@
 
 :root{
     font-family: 'ABeeZee', sans-serif;
-    --left-background: url('/pics/benjamin-voros-U-Kty6HxcQc-unsplash.jpg');
+    --image-background: url('/pics/david-monje-3THn0EN_Ydo-unsplash.jpg');
     --logo-background: url('/pics/odin-lined.png');
-    width: auto;
 }
- body{
+
+.card{
+    width: 100vw;
+    min-height: 100vh; 
     display: flex;
-    width: auto;
- }
+}
 
 .img-background{
-    display: flex;
-    flex-direction: column-reverse; 
-    background: var(--logo-background), var(--left-background);
-    background-color: black, none;
-    background-size: 30% auto, cover;
-    background-position: center 20%;
-    background-repeat: no-repeat, no-repeat; 
-    color: white;
-}
-
-
-
-.text-container{
+    width: 100%;
+    min-height: auto;
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
+    justify-content: center;
+    background: var(--image-background);
+    background-size: 100% 100vh;
+    color: white;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 16px;
 }
 
-div > p {
+.logo{
+    min-height: 40%;
+    background: var(--logo-background);
+    background-size: 30% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    /* align-self: center; */
+}
+
+
+/* style the form */
+.container{
+    background-color: white; 
+    width: 100%;
+}
+
+.intro{
+    padding: 3rem 0 1rem 1rem;
+    border-bottom: 0.1rem solid #C2C2C2;
+}
+
+h3{
+    font-size: 2rem;
     margin: 0;
 }
 
+.form-container{
+    padding: 1rem 0 1rem 1rem;
+    /* background-color: aqua; */
+}
+
+.button-container{
+    padding-left: 1rem;
+    border-top: 0.1rem solid #C2C2C2;
+}
+
+form li {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.form-columns{
+    display: flex;
+    gap: 1rem;
+}
+
 ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
+
+button{
+    margin-top: 1rem;
+}
+
+
+/* styling the input */
+/* input:required{
+    border:  0.1rem solid black;
+    width: 12rem;
+}
+
+ input:valid{
+    border-color:green;
+ }
+
+input:invalid{
+    border-color: red;
+} */
+
+
+
 
