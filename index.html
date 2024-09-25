@@ -19,9 +19,13 @@
         <div class = "container">
 
             <div class = "intro">
-                This is not a real online service! You know you need something like this <br> 
-                in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started<br><br>
-                You know <em>you</em> want to Know
+                <p>
+                    This is not a real online service! You know you need something 
+                    like this in your life to help you realize your deepest dreams. 
+                    Sign up <i>now</i> to get started
+       
+                    You know <em>you</em> want to Know
+                </p>
             </div>
             
             <div class = "form-container">
@@ -33,19 +37,20 @@
                                 <div>
                                     <label for = "first_name">FIRST NAME</label>
                                 </div>
-                                <input type = "text" id = "first_name" name ="first_name" pattern = "[a-zA-Z]{2-100}" required>
+                                <input type = "text" id = "first_name" name ="first_name" minlength = "2" pattern = "[A-Za-z]{2-100}" required>
                             </li>
                             <li>
                                 <div>
-                                    <label for = "user_email">EMAIL</label>
+                                    <label for = "user_email">*EMAIL</label>
                                 </div>
                                 <input type = "email" id = "user_email" name ="user_email" placeholder = "name@example.com" required>
                             </li>
                             <li>
                                 <div>
-                                    <label for = "user_password">PASSWORD</label>
+                                    <label for = "user_password">*PASSWORD</label>
                                 </div>
-                                <input type = "password" id = "user_password" name ="user_password" minlength = "8" required>
+                                <input type = "password" id = "user_password" name ="user_password" minlength = "8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                title = "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                             </li>
                         </ul>
                         <ul class = "section-2">
@@ -53,19 +58,21 @@
                                 <div>
                                     <label for = "last_name">LAST NAME</label>
                                 </div>
-                                <input type = "text" id = "last_name" name ="last_name" pattern = "[a-zA-Z]{2-100}" required>
+                                <input type = "text" id = "last_name" name ="last_name" pattern = "[A-Za-z]{2-100}" required>
                             </li>
                             <li>
                                 <div>
                                     <label for = "phone_number">PHONE NUMBER</label>
                                 </div>
-                                <input type = "tel" id = "tel" name ="tel" required>
+                                <input type = "tel" id = "phone" name ="phone" maxlength ="10" 
+                                " required>
                             </li>
                             <li>
                                 <div>
                                     <label for = "confirm_password">CONFIRM PASSWORD</label>
                                 </div>
-                                <input type = "password" id = "confirm_password" name ="confirm_password" minlength = "8" required>
+                                <input type = "password" id = "confirm_password" name ="confirm_password" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength = "8" 
+                                required>
                             </li>
                         </ul>
                     </div>
@@ -80,5 +87,5 @@
         </div>
     </div>
 
-</body>
+
 </html>
