@@ -4,8 +4,8 @@
 
 :root{
     font-family: 'Dune Rise','ABeeZee', sans-serif;
-    --image-background: url('/pics/eberhard-grossgasteiger-ga20cI4RUho-unsplash.jpg');
-    --logo-background: url('/pics/odin-lined.png');
+    --image-background: url('pics/image.jpg');
+    --logo-background: url('pics/odin-logo.png');
 }
 
 .card{
