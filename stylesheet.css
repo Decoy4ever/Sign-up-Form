@@ -78,7 +78,6 @@
 }
 
 .intro > p{
-    /* width: clamp(45ch, 50%, 75ch); */
     white-space: pre-line;
     margin: 0;
     padding: 0;
@@ -133,7 +132,6 @@ button:hover{
 
 /* styling the input */
 input{
-    /* border:  0.1rem solid black; */
     width: 15rem;
     outline: 0;  /* Outline exist outside the element */
 }

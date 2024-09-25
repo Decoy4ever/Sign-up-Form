@@ -58,14 +58,14 @@
                                 <div>
                                     <label for = "last_name">LAST NAME</label>
                                 </div>
-                                <input type = "text" id = "last_name" name ="last_name" pattern = "[A-Za-z]{2-100}" required>
+                                <input type = "text" id = "last_name" name ="last_name" minlength = "2" pattern = "[A-Za-z]{2-100}" required>
                             </li>
                             <li>
                                 <div>
                                     <label for = "phone_number">PHONE NUMBER</label>
                                 </div>
-                                <input type = "tel" id = "phone" name ="phone" maxlength ="10" 
-                                " required>
+                                <input type = "tel" id = "phone" name ="phone" placeholder = "0456455789" maxlength ="10" 
+                                pattern = "^0(2|3|4|7|8)[0-9]{8}" required>
                             </li>
                             <li>
                                 <div>
